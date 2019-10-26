@@ -26,7 +26,7 @@ void init_temperature(void) {
 	// Configure ADC using the above parameter definitions
 	OpenADC10G(ADC_PARAM1, ADC_PARAM2, ADC_PARAM3, ADC_PARAM4, ADC_PARAM5); 
 	EnableADC10();			// Enable the ADC
-	while (!mAD1GetIntFlag()) {}
+	while (!mAD1GetIntFlag());
 }
 
 /* ----------------------------- read_temperature ----------------------------
